@@ -67,6 +67,11 @@ int is_clean(char* str) {
   // greater than the second.
   result = strcmp(str, cleaned);
 
+  //Check if the string is empty
+  //If the sting is not empty, free it 
+ if(strcmp(cleaned, "") !=0)
+	free(cleaned);
+
   return result == 0;
 }
 
